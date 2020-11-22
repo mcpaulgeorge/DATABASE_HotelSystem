@@ -1,0 +1,104 @@
+@charset "UTF-8";
+p{
+        text-align: center;
+        padding:24px;
+        margin:0;
+        font-family:helvetica,arial,sans-serif;
+        font-size:50px;
+        font-weight:bold;
+        background:#CCC;
+     	background:-webkit-linear-gradient(left,#147B96,#E6D205 25%,#147B96 50%,#E6D205 75%,#147B96);
+        color:transparent;
+         -webkit-background-clip:text;
+            background-size:200% 100%;
+            animation:masked-animation 4s infinite linear; 
+        } 
+        .head{
+        background:#CCC;
+        }
+        @-webkit-keyframes masked-animation {
+            0% {
+                background-position:0 0;
+            }
+            100% {
+                background-position:-100% 0;
+            }
+        }
+        </style>
+        <style>
+        .box{overflow: hidden;height: 100px;margin: 15px 0;}
+		.box>div{height: 100%;}
+		#box7{display: table;width: 100%;}
+		#box7>div{display: table-cell;}
+		.left7{width: 150px;background: #CCC;vertical-align:top;height:500px;}
+		.right7{}
+		ul {
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+   			 width: 150px;
+  			 background-color: #CCC;
+  			 text-align: center
+		}
+ 
+		li a {
+    	display: block;
+   		  background-color:rgb(235, 242, 224);
+  		  text-decoration: none;
+  		  text-align: center
+		}
+      #nav {
+				width: 150px;
+				margin: 0px auto 0;
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #dadada;
+				text-align: center
+			}
+			
+		#nav h2 {
+				width: 150px;
+				height: 35px;
+				line-height: 35px;
+				padding-left: 0px;
+				background: url(img/icon_lft.png) 10px no-repeat #74a400;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 100;
+				cursor: pointer;
+				text-align: center
+			}
+			
+		#nav h2.hover {
+				background: url(img/icon.png) 10px no-repeat #74a400;
+			}
+			
+		#nav li {
+				margin-bottom: 1px;
+				text-align: center
+			}
+			
+		#nav li ul li {
+				width: 150px;
+				padding-left: 0px;
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px solid #ccc;
+				text-align: center;
+			}
+			
+			
+		#nav li ul .hover {
+				background: #EFF4E0;
+			}
+			
+		#nav li ul .active {
+				background: #FFC;
+			}
+			
+		#nav li ul {
+				display: none;
+			}
+			
+			#nav li ul.hover {
+				display: block;
+			}
